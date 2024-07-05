@@ -1,0 +1,52 @@
+body{
+	/* background-color: black; */
+	/* background-image: url(../图片/1706848754352.png); */
+	background-size:cover;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	/* 下为视频背景板 */
+	height: 100vh;
+	margin: 0;
+	padding: 0;
+	overflow: hidden; /* Ensure no scrollbars appear */
+	position: relative; /* Needed for absolute positioning of video */
+}
+
+.video-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; /* Ensure video is behind other content */
+}
+
+
+div{
+	width: 200px;
+	height: 360px;
+	margin: 10px;
+	background-color: slategray;
+	border-radius: 30px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	z-index: 1; /* Ensure content is above video */
+}
+.pic{
+	width: 170;
+	height: 245px;
+	margin-top: 20px;
+	/* margin-left: auto; */
+	border-radius: 30px;
+}
+.name{
+	color: paleturquoise;
+	font-size: 30px;
+	text-align: center;
+}
