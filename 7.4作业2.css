@@ -5,7 +5,7 @@
 .menu{
 	height: 100px;
 	background-color: cornflowerblue;
-	/* text-align: center; */
+	text-align: center;
 }
 iframe{
 	width: 100%;
