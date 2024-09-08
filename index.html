@@ -9,6 +9,7 @@
 		<!-- bootStrap资源引入 -->
 		<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.1/css/bootstrap.min.css" rel="stylesheet">
                 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.1/js/bootstrap.bundle.min.js"></script>
+		<link rel="stylesheet" href="/live2d/css/live2d.css" />
 	</head>
 	<body>
 		<div class="top">
@@ -47,7 +48,20 @@
 			
 		</div>
 		
-		
+		<div id="landlord">
+		    <div class="message" style="opacity:0"></div>
+		    <canvas id="live2d" width="280" height="250" class="live2d"></canvas>
+		    <div class="hide-button">隐藏</div>
+		</div>	（看板娘）
+		<script type="text/javascript">
+		    var message_Path = '/live2d/'
+		    var home_Path = ''  //此处修改为你的域名，必须带斜杠
+		</script>
+		<script type="text/javascript" src="/live2d/js/live2d.js"></script>
+		<script type="text/javascript" src="/live2d/js/message.js"></script>
+		<script type="text/javascript">
+		    loadlive2d("live2d", "/live2d/model/tia/model.json");
+		</script>
 		
 		<div class="menu">
 			<a href="嘿嘿/7.4作业/home.html" target="context">Vsinger</a>
